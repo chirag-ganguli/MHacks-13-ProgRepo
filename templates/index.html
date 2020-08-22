@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Covid | CG </title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{{ url_for('static', filename='../style.css') }}">
+  
+</head>
+
+<body style="background: #FFFFFF;">
+ <div class="login">
+	<center><h2> Deployed by Chirag Ganguli | MHacks13 </h2></center>
+	<br>
+	<br>
+	<br>
+	<h3> Enter the details in the fields below to predict Life Expectancy </h3>
+
+    <form action="{{ url_for('predict')}}"method="post">
+        <input type="text" name="new_cases" placeholder="new_cases" required="required" />
+		<input type="text" name="new_deaths" placeholder="new_deaths" required="required" />
+		<input type="text" name="new_tests" placeholder="new_tests" required="required" />
+		<input type="text" name="tests_per_case" placeholder="tests_per_case" required="required" />
+		<input type="text" name="positive_rate" placeholder="positive_rate" required="required" />
+		<input type="text" name="stringency_index" placeholder="stringency_index" required="required" />
+		<input type="text" name="population_density" placeholder="population_density" required="required" />
+		<input type="text" name="median_age" placeholder="median_age" required="required" />
+		<input type="text" name="aged_65_older" placeholder="aged_65_older" required="required" />
+		<input type="text" name="cardiovasc_death_rate	" placeholder="cardiovasc_death_rate	" required="required" />
+		<input type="text" name="diabetes_prevalence" placeholder="diabetes_prevalence" required="required" />
+		<input type="text" name="female_smokers	" placeholder="female_smokers	" required="required" />
+		<input type="text" name="male_smokers" placeholder="male_smokers" required="required" />
+		<input type="text" name="handwashing_facilities" placeholder="handwashing_facilities" required="required" />
+		<input type="text" name="hospital_beds_per_thousand" placeholder="hospital_beds_per_thousand" required="required" />
+		<p>
+		<br>
+		<br>
+		<center>
+		<br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict life expectancy</button> </p> </center>
+		
+    </form>
+	<br><br>
+	<center><section> <img src="Features.jpg" alt="Features"> </section></center>
+	<br>
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+ 
+ <footer>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<p style="text-align:right"> <small> &copy; 2020 chiragganguli.codes </small> </p>
+</footer>
+</body>
+</html>
