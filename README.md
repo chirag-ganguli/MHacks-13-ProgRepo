@@ -1,7 +1,7 @@
 # MHacks-13-ProgRepo
 MHacks13 | Project | Life Expectancy Prediction
 
-TO check the frontend of the project :    GO TO -->  https://chirag-ganguli.github.io/MHacks-13-ProgRepo/
+TO check the frontend of the project :    GO TO -->  https://chirag-ganguli.github.io/MHacks-13-ProgRepo/templates/index.html
 
 TO Run the project in your own system, follow the below steps:
 1.  Clone the Project in your local drive
